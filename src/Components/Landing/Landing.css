@@ -1,0 +1,38 @@
+.header {
+    height: 100vh;
+    /* background-image: linear-gradient(transparent, #18181d 85%), url(/22.jpg); */
+    background-image: url(/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-text {
+    width: 60vw;
+    text-align: center;
+    position: absolute;
+    top: 18vh;
+    right: 12vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header-my-descirption {
+    margin-top: 100px;
+}
+
+.header-text p {
+    margin: 0;
+}
+
+.name-text {
+    font-size: 8vw !important;
+    font-weight: 600 !important;
+}
+
+.me {
+    width: 22vw;
+    margin: 170px 100px;
+}
