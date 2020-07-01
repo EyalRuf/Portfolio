@@ -88,7 +88,6 @@ export default class SinglePageStepper extends React.Component<{}, { stepIndex: 
             
         //     this.setState({ visible: !this.state.visible });
         // }
-        console.log(scrollPos)
         this.steps.forEach((currStep, index) => {
             if (index !== this.state.stepIndex && scrollPos > currStep.scrollPosMin && scrollPos <= currStep.scrollPosMax) {
                 this.setState({
