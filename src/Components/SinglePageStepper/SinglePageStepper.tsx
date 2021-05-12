@@ -50,7 +50,7 @@ export default class SinglePageStepper extends React.Component<{}, { stepIndex: 
                                     onClick={() => this.scrollTo(step.scrollPosMin)}
                                 >
                                     <StepIcon title={step.name} active={isActive} icon={
-                                        <step.icon classes={{ root: "step-icon" }} color={isActive ? "primary" : "inherit"}
+                                        <step.icon classes={{ root: "step-icon" }} color={isActive ? "secondary" : "inherit"}
                                             fontSize="large"
                                         />}
                                     />

@@ -1,7 +1,7 @@
 .header {
     height: 100vh;
     /* background-image: linear-gradient(transparent, #18181d 85%), url(/22.jpg); */
-    background-image: url(/bg.jpg);
+    background-image: url(/IdeasPaperBig.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,29 +10,48 @@
 }
 
 .header-text {
-    width: 60vw;
-    text-align: center;
-    position: absolute;
-    top: 18vh;
-    right: 12vw;
-    display: flex;
-    flex-flow: column nowrap;
+    margin: 5vh 2vw;
+    display: inline-block;
 }
 
 .header-my-descirption {
-    margin-top: 100px;
+    margin: 5px 35px;
+    text-shadow: 2px 2px #301e21;
+    padding: 10px 45px;
+    display: inline-block;
+    /* border-radius: 15px !important;
+    box-shadow: #301e21 -8px 4px !important;
+    opacity: 0.75; */
+}
+
+.pos {
+    position: absolute;
+    bottom: 2vh;
+    right: 30vw;
+}
+
+.tag {
+    background: #301e21;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
 }
 
 .header-text p {
-    margin: 0;
+    margin: 10px;
+    text-shadow: 2px 2px #301e21;
 }
 
 .name-text {
     font-size: 8vw !important;
     font-weight: 600 !important;
+    color: linear-gradient(270deg #F3B123, #D1981D);
 }
 
 .me {
     width: 22vw;
     margin: 170px 100px;
+    padding: 5px;
 }

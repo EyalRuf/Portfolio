@@ -1,35 +1,30 @@
 import React from 'react';
+import { Paper } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
-// import { Slide } from '@material-ui/core';
 
+// import { Slide } from '@material-ui/core';
 import './Landing.css'
 
-class Landing extends React.Component<{}, {slideImg: boolean}> {
-    state = {
-        slideImg: false
-    }
-
-    componentDidMount() {
-        setTimeout(() => this.setState({ slideImg: true }), 1000)
-    }
-
+class Landing extends React.Component<{}, {}> {
     render() {
         return (
             <header className="header">
+                <Typography variant="h5" color="textSecondary">
+                    <p className="text-bg pos"> Hello World! Can&apos;t Wait to Share My Ideas With You </p>
+                </Typography>
                 <div className="header-text">
                     <Typography variant="h1" color="primary" className="name-text"> EYAL RUFEISEN </Typography>
-                    <div className="header-my-descirption">
-                        <Typography variant="h3" color="textPrimary"> Coder, Game Designer & Developer </Typography>
-                        <Typography variant="h5" color="textSecondary">
-                            <p> After years of being a web developer for the IDF I have turned my attention to my biggest passion. Games. </p>
-                            <p> I have been a gamer all my life and I have a burning desire to learn about them and make them. </p>
-                            <p> I work hard so people can the way I felt when playing my favorite games. </p>
+                        <Typography variant="h4" color="textPrimary">
+                            <span> Coder, Game Designer/Developer </span>
                         </Typography>
-                    </div>
+                        {/* <Typography variant="h5" color="textSecondary">
+                            <p> &#8226; Years of Programming Experience </p>
+                            <p> &#8226; Design Thinking </p>
+                            <p> &#8226; Burning Desire to Make Games</p>
+                            <p> <span className="tag">Passion</span> <span className="tag">Hard Work</span> <span className="tag">Innovation</span> </p>
+                        </Typography> */}
                 </div>
-                {/* <Slide in={this.state.slideImg} direction="right"> */}
-                {/* </Slide> */}
-                <img className="me" src="/rsz_my_outline.png"/>
+                {/* <img className="me" src="/rsz_my_outline.png"/> */}
             </header>
         );
     }

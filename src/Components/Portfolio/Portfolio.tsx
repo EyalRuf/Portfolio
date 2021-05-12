@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, makeStyles, Theme, createStyles, Grid, Typography } from '@material-ui/core';
 import GameCard from './GameCard';
 
+import './Portfolio.css'
+
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         box: {
@@ -16,7 +18,7 @@ export default function Portfolio() {
     const classes = useStyles();
 
     return (
-        <Box className={classes.box}>
+        <Box className={classes.box + " portfolio-bg"}>
             <Typography variant="h3" color="primary">
                 Portfolio
             </Typography>
@@ -32,7 +34,7 @@ export default function Portfolio() {
                 <Grid item>
                     {GameCard("Colormore", "June 11 2020", "/my_games/Coloremore.png", `
                         A 2d, social, sharing and supporting game meant to help people deal with the negative effects of
-                        social distancing. Developped in unity & Photon for unity (PUN2) as the multiplayer engine. 
+                        social distancing. Developed in Unity + Photon for unity (PUN2) as the multiplayer engine. 
                         Was created in a team environment whithin my Communcation & Multimedia Design studies.
                     `, "https://github.com/EyalRuf/Colormore",
                     "https://drive.google.com/file/d/1HHVVgQ0By0wUhpQlQUTHMjlj2tu7_zCl/view?usp=sharing")}
