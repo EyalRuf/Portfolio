@@ -9,13 +9,14 @@
     flex-direction: column;
     justify-content: flex-end;
     min-height: 400px;
-    margin: auto 100px;
+    margin: auto 100px 0 100px;
     padding-top: 100px;
 }
 
 .my-pic {
     min-width: 100px;
     max-width: 415px;
+    width: 75%;
 }
 
 .links-and-logo {
@@ -28,15 +29,16 @@
 .logo {
     max-width: 620px;
     min-width: 300px;
-    width: 100%;
+    width: 85%;
 }
 
 .links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 0.5fr 2fr;
-    width: 150%;
+    width: 115%;
     max-height: 20%;
+    margin-top: -50px;
 }
 
 .link {
@@ -48,9 +50,15 @@
     justify-content: flex-start;
 }
 
+
 .link a {
     text-decoration: none;
     color: black;
+}
+
+.link a:hover {
+    font-size: 50px;
+    min-width: 230px;
 }
 
 .link1 {
@@ -94,9 +102,75 @@
     display: inline-block;
 }
 
+.cv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0 0;
+    width: 45px;
+    cursor: pointer;
+}
+
+.cv:hover {
+    width: 55px;
+    margin: 15px 15px 0 0;
+}
+
+.arrow {
+    height: 100px;
+    margin: 0 5px 10px 0;
+    animation: MoveUpDown 2s ease-in-out infinite;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+    .arrow {
+            height: 60px;
+            margin: 0 0px 2.5px 0;
+    }
+
+    @keyframes MoveUpDown {
+
+        0%,
+        100% {
+            bottom: 0;
+        }
+
+        50% {
+            bottom: 7.5px;
+        }
+    }
+
+
     .land-page-content {
         padding: unset;
+    }
+
+    .cv {
+        margin: 45px 0 0 70%;
+        transform: rotate(-3deg);
+        width: 35px;
+        right: unset;
+        left: 0;
+    }
+
+    .cv:hover {
+        width: 35px;
+        margin: 45px 50% 0 0;
     }
 
     .my-img-container {
@@ -109,6 +183,7 @@
         right: 0;
         top: unset;
         height: 55vh;
+        width: unset;
     }
     
     .links-and-logo {
@@ -121,7 +196,7 @@
 
     .logo {
         flex: unset;
-        width: 85%;
+        width: 100%;
         margin: auto;
     }
 

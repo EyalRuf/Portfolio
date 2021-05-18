@@ -20,11 +20,10 @@ export default function LandingPage() {
                         <img src="/mypiclanding.png" className="my-pic" />
                     </div>
                 </div>
-                <div className="bg-words"></div>
-            </div>
-            <div className="background-stripe">
-            </div>
-            <div className="background-stripe background-stripe2">
+                {/* <a href="Eyal_CV.pdf" target="_blank">
+                    <img src="/cv.png" className="cv" />
+                </a> */}
+                <img src="/arrow.png" className="arrow" />
             </div>
         </div>
     );

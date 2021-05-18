@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.icons img:hover {
+    height: 110%;
+}
+
 .icons1 {
     left: 65%;
     top: -60px;

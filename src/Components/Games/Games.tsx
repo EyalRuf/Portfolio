@@ -17,8 +17,8 @@ export default function Games () {
                             <div className="game-container-item">
                                 <img src="ColormoreN.png" className="game-container-item game-container-img"/>
                                 <div className="icons icons1">
-                                    <a href="https://stansu.itch.io/colormore"><img src="itch.png" /></a>
-                                    <a href="https://github.com/EyalRuf/Colormore"><img src="github.png" /></a>
+                                    <a href="https://stansu.itch.io/colormore" rel="noopener noreferrer" target="_blank"><img src="itch.png" /></a>
+                                    <a href="https://github.com/EyalRuf/Colormore" rel="noopener noreferrer" target="_blank"><img src="github.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -27,8 +27,8 @@ export default function Games () {
                             <div className="game-container-item">
                                 <img src="RemnantsN.png" className="game-container-item game-container-img" />
                                 <div className="icons icons2">
-                                    <a href="https://eyalruf.itch.io/remnants"><img src="itch.png" /></a>
-                                    <a href="https://github.com/EyalRuf/GGJ2021"><img src="github.png" /></a>
+                                    <a href="https://eyalruf.itch.io/remnants" rel="noopener noreferrer" target="_blank"><img src="itch.png" /></a>
+                                    <a href="https://github.com/EyalRuf/GGJ2021" rel="noopener noreferrer" target="_blank"><img src="github.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,8 @@ export default function Games () {
                             <div className="game-container-item">
                                 <img src="StreamvivorN.png" className="game-container-item game-container-img" />
                                 <div className="icons icons3">
-                                    <a href="https://eyalruf.itch.io/streamvivor"><img src="itch.png" /></a>
-                                    <a href="https://github.com/EyalRuf/GameLab-TMG"><img src="github.png" /></a>
+                                    <a href="https://eyalruf.itch.io/streamvivor" rel="noopener noreferrer" target="_blank"><img src="itch.png" /></a>
+                                    <a href="https://github.com/EyalRuf/GameLab-TMG" rel="noopener noreferrer" target="_blank"><img src="github.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -46,8 +46,8 @@ export default function Games () {
                             <div className="game-container-item">
                                 <img src="MoreGames.png" className="game-container-item game-container-img" />
                                 <div className="icons icons4">
-                                    <a href="https://eyalruf.itch.io/" className="icon-last-note1"><img src="itch.png" /></a>
-                                    <a href="https://github.com/EyalRuf" className="icon-last-note2" ><img src="github.png" /></a>
+                                    <a href="https://eyalruf.itch.io/" rel="noopener noreferrer" target="_blank" className="icon-last-note1"><img src="itch.png" /></a>
+                                    <a href="https://github.com/EyalRuf" rel="noopener noreferrer" target="_blank" className="icon-last-note2" ><img src="github.png" /></a>
                                 </div>
                             </div>
                         </div>
