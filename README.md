@@ -1,22 +1,11 @@
-Eyal's DC9 project
+## eyalruf.com ##
 
-You’ll need to follow a few steps to run the website.
 
-## 1. Install node.js and npm:
+Hello! This is my portfolio website project.
 
-https://nodejs.org/en/
 
-## 2. Install dependencies
+### etc ###
+I started out using react typescript just because I like it and have used it a lot in the past.
+But because of the simplicity of the website I didn't really need all the functionalities so i did most things with plain html & css.
 
-Run: (in a command prompt - cmd, or inside a visual studio code terminal)
-
-```npm install```
-
-## 3. Run the server:
-
-Run:
-
-```npm start```
-
-This will run a server.
-This will also automaticly open your browser with a new tab at localhost:3000 and the website within it. If it doesn't you'll need to open it yourself and insert localhost:3000 into the address bar.
+Anyway, hope you like it and you're free to hit me up with feedback about my code & my website.
