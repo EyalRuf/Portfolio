@@ -1,0 +1,121 @@
+.contact-content {
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+.contact-content-item {
+    width: 100%;
+}
+
+.contact-text {
+    font-family: PermMarker;
+    font-size: 130px;
+    color: black;
+    text-align: left;
+    padding-left: 100px;
+    height: 200px;
+}
+
+.contact-stuff {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.big-img {
+    width: 115%;
+    max-width: 600px;
+}
+
+.the-div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.sticky {
+    background-image: url(/yellow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 345px;
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    gap: 45px 45px;
+    grid-template-areas: "linkedin linkedin facebook facebook email email"
+    ". itch itch git git .";
+    width: unset;
+    margin-left: -50px;
+}
+
+.contact-icon {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.linkedin {
+    grid-area: linkedin;
+}
+
+.facebook {
+    grid-area: facebook;
+}
+
+.email {
+    grid-area: email;
+}
+
+.itch {
+    grid-area: itch;
+}
+
+.git {
+    grid-area: git;
+}
+
+@media only screen and (max-width: 1800px) {
+    .contact-text {
+        font-size: 120px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-text {
+        font-size: 100px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .contact-icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0 0;
+        margin-left: -25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-text {
+        font-size: 65px;
+    }
+
+    .contact-icons {
+        margin-left: unset;
+    }
+
+    .contact-icon {
+        height: 60px;
+        width: 60px;
+    }
+}

@@ -1,5 +1,89 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url(/Font/Recursive/Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf);
+    font-family: NanumPen;
+    src: url(/fonts/NanumPenScript-Regular.ttf);
     font-weight: 400;
+}
+
+@font-face {
+    font-family: PermMarker;
+    src: url(/fonts/PermanentMarker-Regular.ttf);
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.site-page {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.background-stripe {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 50%;
+    width: 100%;
+    background-color: #58D8E8;
+    clip-path: polygon(100% 10%, 100% 60%, 0 100%, 0 50%);
+    z-index: -100;
+    overflow-x: hidden;
+}
+
+.background-stripe2 {
+    top: 50%
+}
+
+.bg-words {
+    min-height: 900px;
+    min-width: 1600px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/bgwords2.png);
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+.container {
+    width: 100vw;
+    z-index: 100;
+}
+
+.content {
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+    .bg-words {
+        min-height: unset;
+        min-width: unset;
+        height: 100%;
+        width: 100%;
+        background-image: url(/mobile-bgwords.png);
+    }
 }

@@ -1,0 +1,136 @@
+.games-content {
+    flex-flow: column nowrap;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.games-content-item {
+    width: 100%;
+}
+
+.games-text {
+    font-family: PermMarker;
+    font-size: 130px;
+    color: black;
+    text-align: left;
+    padding-left: 100px;
+    height: 150px;
+}
+
+.games-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.game-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+.game-container-item {
+    margin: auto;
+}
+
+.game-container-img {
+    width: 100%;
+}
+
+.game-container-item:first-of-type {
+    margin-bottom: -40px;
+}
+
+.icons {
+    position: relative;
+    height: 38px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.icons1 {
+    left: 65%;
+    top: -60px;
+}
+.icons2 {
+    left: 61%;
+    top: -94px;
+}
+.icons3 {
+    left: 63%;
+    top: -86px;
+    transform: rotate(-5deg);
+}
+.icons4 {
+    left: 68%;
+    top: -67px;
+}
+
+.icon-last-note1 {
+    position: relative;
+    top: -108px;
+    right: 55px;
+}
+
+.icon-last-note2 {
+    position: relative;
+    top: -33px;
+    right: 70px;
+}
+
+@media only screen and (max-width: 1800px) {
+    .games-text {
+        font-size: 120px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .games-text {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+    .games-text {
+        font-size: 70px;
+    }
+
+    .icons1 {
+        left: 60%;
+        top: -48px;
+    }
+
+    .icons2 {
+        left: 55%;
+        top: -73px;
+    }
+
+    .icons3 {
+        left: 57%;
+        top: -70px;
+    }
+
+    .icons4 {
+        left: 68%;
+        top: -67px;
+    }
+
+    .icon-last-note1 {
+        top: -50px;
+        right: 35px;
+    }
+
+    .icon-last-note2 {
+        top: 5px;
+        right: 60px;
+    }
+}

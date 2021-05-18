@@ -1,17 +1,22 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import SinglePageStepper from './Components/SinglePageStepper/SinglePageStepper';
-import Landing from './Components/Landing/Landing';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Footer from './Components/Footer/Footer';
+
+import LandingPage from './Components/LandingPage/LandingPage';
+import AboutMe from './Components/AboutMe/AboutMe';
+import Games from './Components/Games/Games';
+import Contact from './Components/Contact/Contact';
 
 export default function App() {
     return (
-        <Container maxWidth={false} style={{margin: "0", padding: "0"}}>
-            <SinglePageStepper />
+        <Container maxWidth={false} style={{ margin: "0", padding: "0", overflowX: "hidden" }}>
+            <LandingPage />
+            <AboutMe />
+            <Games />
+            <Contact />
+            {/* <SinglePageStepper />
             <Landing />
             <Portfolio />
-            <Footer />
+            <Footer /> */}
         </Container>
     );
 }

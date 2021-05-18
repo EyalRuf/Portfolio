@@ -5,11 +5,11 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
     palette: {
         text: {
-            primary: "#F2F2F2",
+            primary: "#404040",
             secondary: "#FAF0D3"
         },
         primary: {
-            main: '#F3B123'
+            main: '#000000'
         },
         secondary: {
             main: '#FAF0D3',
@@ -18,12 +18,12 @@ const theme = createMuiTheme({
             main: red.A400,
         },
         background: {
-            default: "#404040",
+            default: "#81E8F8",
             paper: "#333333"
         },
     },
     typography: {
-        fontFamily: "myFirstFont"
+        fontFamily: "NanumPen"
     },
 });
 
