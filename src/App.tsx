@@ -14,7 +14,7 @@ export default class App extends React.Component<{}, { screensAmount: number }> 
 
     componentDidMount() {
         window.addEventListener("resize", this.scaleScreen.bind(this));
-        setTimeout(this.scaleScreen.bind(this), 200);
+        setTimeout(this.scaleScreen.bind(this), 500);
     }
 
     scaleScreen() {
@@ -27,6 +27,8 @@ export default class App extends React.Component<{}, { screensAmount: number }> 
             const height = landing.offsetHeight + aboutme.offsetHeight + games.offsetHeight + contact.offsetHeight;
             console.log(height + " / " + window.innerHeight + " = " + height / window.innerHeight);
             this.setState({ screensAmount: (height / window.innerHeight) - 1});
+        } else {
+            setTimeout(this.scaleScreen.bind(this), 500);
         }
     }
 
@@ -58,12 +60,13 @@ export default class App extends React.Component<{}, { screensAmount: number }> 
         
         return (
             <Container id="container" maxWidth={false} style={{ margin: "0", padding: "0", overflowX: "hidden" }}>
-                <LandingPage />
+                hello world
+                {/* <LandingPage />
                 <AboutMe />
                 <Games />
-                <Contact />
+                <Contact /> */}
                 
-                <div className="repeat">
+                {/* <div className="repeat">
                     {
                         this.createBGWords()
                     }
@@ -84,7 +87,7 @@ export default class App extends React.Component<{}, { screensAmount: number }> 
                     <div>
                         To restart click <a href="#Landing">here</a>
                     </div>
-                </div>
+                </div> */}
             </Container>
         );
     }

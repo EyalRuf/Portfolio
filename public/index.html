@@ -9,9 +9,132 @@
     <title>Eyal Rufeisen</title>
     <!-- Fonts to support Material Design -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FFFCA5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #FF8A8D;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f36b6f;
+        }
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            user-select: none;
+        }
+        body {
+        margin: 0;
+        overflow-x: hidden;
+        }
+        .pageimg {
+            min-width: 100vw;
+            min-height: 100vh;
+            background: url(./2023/page1.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: black;
+        }
+        button {
+            background-size: cover  ;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        .pagebtn {
+            position: absolute;
+            height: 8vh;
+            width: 9vw;
+        }
+        .pagebtn:hover{
+            height: 8.5vh;
+            width: 9.5vw;
+            cursor: pointer;
+        }
+        .cv {
+            position: relative;
+            height: 17vh;
+            width: 17vh;
+            background-image: url(./2023/CV.png);
+            top: 21vh; 
+            left: 66vw;
+        }
+        .cv:hover {
+            cursor: pointer;
+            height: 17.5vh;
+            width: 17.5vh;
+        }
+        .itch {
+            position: relative;
+            height: 4.5vh;
+            width: 4.5vh;
+            background-image: url(./2023/itchio-textless-black@2x.png);
+            top: 66vh; 
+            left: 63vw;
+            rotate: -4deg;
+        }
+        .itch:hover {
+            cursor: pointer;
+            height: 5vh;
+            width: 5vh;
+        }
+        .moregames {
+            height: 12vh;
+            width: 16vh;
+            position: absolute;
+            left: 21.5%;
+            top: 652%;
+            background-image: url(./2023/remnants.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .moregames:hover {
+            cursor: pointer;
+            height: 12.5vh;
+            width: 16.5vh;
+        }
+    </style>
   </head>
   <body>
     <noscript>Please enable Javascript :[</noscript>
-    <div id="root"></div>
+    <div id="root">
+        <div id="landing" class="pageimg" style="background-image: url(./2023/page1.png)">
+            <button class="pagebtn" style="background-image: url(./2023/btnhome.png); top: 67.5%; left: 28%" onclick="document.getElementById('landing').scrollIntoView();"></button>
+            <button class="pagebtn" style="background-image: url(./2023/btnabout.png); top: 67.5%; left: 42%" onclick="document.getElementById('about').scrollIntoView();"></button>
+            <button class="pagebtn" style="background-image: url(./2023/btngames.png); top: 80%; left: 33%" onclick="document.getElementById('games1').scrollIntoView();"></button>
+            <button class="pagebtn" style="background-image: url(./2023/btncntct.png); top: 80%; left: 47.5%" onclick="document.getElementById('contact').scrollIntoView();"></button>
+        </div>
+        <div id="about" class="pageimg" style="background-image: url(./2023/page2.png)">
+            <button class="cv" onclick="window.open('./Eyal_CV.pdf')"></button>
+        </div>
+
+        <div id="games1" class="pageimg" style="background-image: url(./2023/page3.png)"><button class="itch" onclick="window.open('https://unsealed-studios.itch.io/befiend')"></button></div>
+        <div id="games2" class="pageimg" style="background-image: url(./2023/page4.png)"><button class="itch" style="top: 75vh; left: 51vw; rotate: 4deg;" onclick="window.open('https://drillbit.itch.io/fightingchance')"></button></div>
+        <div id="games3" class="pageimg" style="background-image: url(./2023/page5.png)"><button class="itch" style="top: 80vh; left: 53vw; rotate: 1deg;" onclick="window.open('https://eyalruf.itch.io/project-s')"></button></div>
+        <div id="games4" class="pageimg" style="background-image: url(./2023/page6.png)"><button class="itch" style="top: 71vh; left: 62vw; rotate: -4deg;" onclick="window.open('https://eyalruf.itch.io/islandmayhem')"></button></div>
+        
+        <div id="contact" class="pageimg" style="background-image: url(./2023/page7.png)">
+
+            <button class="moregames" onclick="window.open('https://eyalruf.itch.io/remnants')"></button>
+            <button class="moregames" style="left:31%; background-image: url(./2023/treesa.png);" onclick="window.open('https://lawdgawdsky.itch.io/mother-treesa-root-of-evil')"></button>
+            <button class="moregames" style="top:668%; background-image: url(./2023/colormore.png);" onclick="window.open('https://stansu.itch.io/colormore')"></button>
+            <button class="moregames" style="top:668%; left:31%;background-image: url(./2023/covid.png);" onclick="window.open('https://eyalruf.itch.io/covid-custodian')"></button>
+            
+            
+            <button class="itch" style="top: 76vh; left: 50vw; rotate: 0deg;" onclick="window.open('https://eyalruf.itch.io')"></button>
+            <button class="itch" style="background-image: url(./2023/linkedin@2x.png); top: 76vh; left: 52vw; rotate: 0deg;" onclick="window.open('https://www.linkedin.com/in/eyal-rufeisen/')"></button>
+            <button class="itch" style="background-image: url(./2023/gmail@2x.png); top: 76vh; left: 54vw; rotate: 0deg;" onclick="window.open('mailto:eyalrufeisen@gmail.com')"></button>
+        </div>
+    </div>
   </body>
 </html>
